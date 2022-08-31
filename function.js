@@ -19,6 +19,7 @@ function details(value1, value2){
     }
     // when using return, it will never execute anithing under this return 
     // lets see how. we will console log here, and it will not show any output
+    // because Javascript compiler will never reach in this code that's why this console log will not visible in output
     console.log('This is never be shown')
 
 }
