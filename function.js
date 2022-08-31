@@ -7,16 +7,19 @@ function addAll(){
     return sum
 }
 
-var adddd = addAll(10, 10, 209)
-console.log(adddd)
+var add1 = addAll(10, 10, 209)
+console.log(add1)
+
 
 // another
-
 function details(value1, value2){
     return{
         name : value1,
         email: value2
     }
+    // when using return, it will never execute anithing under this return 
+    // lets see how. we will console log here, and it will not show any output
+    console.log('This is never be shown')
 
 }
 
