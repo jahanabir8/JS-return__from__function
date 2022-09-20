@@ -26,3 +26,24 @@ function details(value1, value2){
 
 var det = details('Abir Islam Anupom', 'onupomabir@gmail.com')
 console.log(det)
+
+
+// complexe type of return in function
+function welcomeMsg1(name1, ret1){
+    console.log('Welcome Mr. ' + name1);
+    return function Option(){
+        console.log('Do you like '+ ret1 + ' Mr. ' + name1)
+    }()
+}
+welcomeMsg1('Abir Islam Anupom', 'Coffee')
+
+
+// another one is this . this two return functions are same but in different way
+function welcomeMsg2(name2){
+    console.log('Welcome Mr. '+ name2)
+
+    return function Option(menu2){
+        console.log('Do you line ' + menu2 + ' Mr. ' + name)
+    }
+}
+welcomeMsg2('Abir Islam Anupom') ('Coffee')
